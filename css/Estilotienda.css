@@ -1,0 +1,179 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Estonia', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+/*GRID AREA GENERAL Desktop*/
+
+@media screen and (min-width:1200px) {
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "filtros main imagenDecorativa"
+    "filtros main imagenDecorativa"
+    "Filtros main imagenDecorativa"
+    "footer footer footer";
+    grid-template-columns: 250px 1fr 300px;
+    grid-template-rows: 100px 1fr  100px ;
+}}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+section#imagenDecorativa {
+    grid-area: imagenDecorativa;
+    ;
+
+}
+
+section#filtros {
+    grid-area: filtros;
+    ;
+
+}
+
+main {
+    grid-area: main;
+}
+
+
+/*Flex box HEADER*/
+
+.header {
+    display: flex;
+    background-color: #d42428;
+    color: white;
+    border-bottom: 2px solid grey;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+   }
+
+.icono {
+    
+    width: 80px;
+}
+
+.header__titulo {
+    display: inline;
+}
+
+.nav__menu {
+    display: inline;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+
+
+/*MAIN*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-items: center;
+}
+   
+
+.titulosTienda {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.imagenesTienda {
+
+    width: 150px;
+    border-radius: 10px;
+    border-style: double;
+    padding: 15px;
+    
+}
+
+.main__vinos {
+    display: flex;
+}
+
+.main__spirits {
+    display: flex;
+   
+}
+
+.main__gourmet {
+    display: flex;
+   
+}
+
+section {
+    overflow: hidden;
+}
+
+.imagenDecorativa {
+    width: 210%;
+}
+
+
+.filtros {
+    font-size: 20px;
+    background-color: grey;
+    color: white;
+
+}
+
+
+
+
+/*FOOTER*/
+
+
+.footer {
+    background-color: #d42424;  
+    color: white;
+    ;    
+    display: block;
+
+
+    }
+
+.footer__img {
+    display: flex;
+    width: 50px;
+    
+}
+
+
+/*Intento de Responsive, otro día aplico mobile first (lo prometo)*/
+
+/*Mobile*/
+
+
+@media screen and (min-width:480px) {
+    body {
+    grid-template-areas: 
+    "header header" 
+    "filtros main" 
+    "filtros main"
+    "Filtros main" 
+    "footer footer"
+    grid-template-columns: 100px 1fr ;
+    grid-template-rows: 80px 1fr  80px ;
+
+    }
+}

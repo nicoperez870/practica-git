@@ -1,0 +1,98 @@
+/*reseteo css*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Diseño Header*/
+.header {
+    display: flex;
+    background-color: maroon;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    position: sticky;
+    top: 0;
+    align-items: flex-end;
+
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header__icono { 
+    width: 80px;
+
+}
+
+.nav {
+    width: 40%;
+    align-items: flex-end;
+    justify-content: space-around;
+    justify-items: flex-end;
+}
+    
+.nav__menu {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: end;  
+  
+}
+.nav__menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__oculto {
+    position: absolute;
+    display: none;
+}
+.cuerpo { 
+
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/img/Platos\ de\ comida.jpg)
+  
+}
+
+
+
+.cuerpo__img {
+   width: max-content;
+   height: 600px;
+}
+
+
+.cuerpo__texto {
+    
+    font-family: 'Estonia', cursive; ;
+    ;
+    top: 200px;
+    text-align-last: center;
+    
+}
+
+.footer {
+    background-color: maroon;  
+    color: white;
+    }
+
+
+
+/*ESTILOS CLUB*/
+
+
+.imagenesTienda {
+    margin-left: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border-style: double;
+
+}
